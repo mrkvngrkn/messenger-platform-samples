@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "appSecret": "270a1b03d6b44ae5db589b3a6b4acd39",
+    "pageAccessToken": "EAAM9MMhV0zUBAMmzGYu6EU0ofQqC2kIK5s6FG4k3ZCGa3zFjwZCm2rwK9xuzqA5qF8cNUBrLFgUwlN8eXxQKtwvLqoReCW3oEESg8RJOmx4SKaD9H95TOQB2ZAFPihujPIa6RXAA7kJkqtnFhYmJ46fP0vAlZBg8IKVkN4G8IgZDZD",
+    "validationToken": "thisIsSuper",
+    "serverURL": "https://first-fbmsg.herokuapp.com"
 }
