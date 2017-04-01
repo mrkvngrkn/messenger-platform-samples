@@ -88,15 +88,14 @@ app.post('/webhook', function (req, res) {
     // Iterate over each entry
     // There may be multiple if batched
     data.entry.forEach(function(pageEntry) {
-
-    console.log('------------');
-    console.log('webhook req entry', pageEntry);
-    console.log('------------');
       var pageID = pageEntry.id;
       var timeOfEvent = pageEntry.time;
 
       // Iterate over each messaging event
       pageEntry.messaging.forEach(function(messagingEvent) {
+          console.log('------------');
+          console.log('message event', messagingEvent);
+          console.log('------------');
         if (messagingEvent.optin) {
           receivedAuthentication(messagingEvent);
         } else if (messagingEvent.message) {
