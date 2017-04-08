@@ -648,6 +648,7 @@ function sendWebviewMessage(recipientId) {
                         buttons: [{
                             type: "web_url",
                             webview_height_ratio: "compact",
+                            webview_share_button: "hide",
                             url: "https://first-fbmsg.herokuapp.com/webview.html",
                             title: "Voer nummer in"
                         }]
