@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Select a number</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+            padding: 5px;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            background: #ccc;
+        }
+
+        input {
+            background: #fff;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        *:focus {
+            border: none;
+            outline: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var input = document.getElementById("inputBox").focus().click();
+        }
+    </script>
+</head>
+<body>
+    <input type="date" id="inputBox" class="control-input" palceholder="date" autofocus />
+    <input type="datetime" id="inputBox" class="control-input" palceholder="dateTime"  />
+    <input type="datetime-local" id="inputBox" class="control-input" palceholder="dateTime-local????"  />
+</body>
+</html>

@@ -645,9 +645,16 @@ function sendWebviewMessage(recipientId) {
                         type: "web_url",
                         webview_height_ratio: "compact",
                         webview_share_button: "hide",
-                        url: "https://first-fbmsg.herokuapp.com/webview.html",
+                        url: "https://first-fbmsg.herokuapp.com/number.html",
                         title: "Voer nummer in"
-                    }]
+                    },
+                      {
+                          type: "web_url",
+                          webview_height_ratio: "compact",
+                          webview_share_button: "hide",
+                          url: "https://first-fbmsg.herokuapp.com/date.html",
+                          title: "Voer datum in"
+                      }]
                 }
             }
         }
