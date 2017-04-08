@@ -647,7 +647,7 @@ function sendWebviewMessage(recipientId) {
                         image_url: SERVER_URL + "/assets/rift.png",
                         buttons: [{
                             type: "web_url",
-                            webview_height_ratio: "full",
+                            webview_height_ratio: "compact",
                             url: "https://first-fbmsg.herokuapp.com/webview.html",
                             title: "Voer nummer in"
                         }]
