@@ -286,6 +286,10 @@ function receivedMessage(event) {
         sendGenericMessage(senderID);
         break;
 
+      case 'webview':
+        sendWebviewMessage(senderID);
+        break;
+
       case 'receipt':
         sendReceiptMessage(senderID);
         break;
@@ -620,6 +624,41 @@ function sendGenericMessage(recipientId) {
   };  
 
   callSendAPI(messageData);
+}
+
+/*
+ * Send a Structured Message (Webview Message type) using the Send API.
+ *
+ */
+function sendWebviewMessage(recipientId) {
+    var messageData = {
+        recipient: {
+            id: recipientId
+        },
+        message: {
+            attachment: {
+                type: "template",
+                payload: {
+                    template_type: "generic",
+                    elements: [{
+                        title: "Use Webview input",
+                        subtitle: "Next-generation virtual reality",
+                        item_url: "https://www.oculus.com/en-us/rift/",
+                        image_url: SERVER_URL + "/assets/rift.png",
+                        buttons: [{
+                            type: "web_url",
+                            webview_height_ratio: "full",
+                            messenger_extensions: true,
+                            url: "https://first-fbmsg.herokuapp.com/webview.html",
+                            title: "Voer nummer in"
+                        }]
+                    }]
+                }
+            }
+        }
+    };
+
+    callSendAPI(messageData);
 }
 
 /*

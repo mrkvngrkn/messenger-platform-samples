@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select a number</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+            padding: 5px;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            background: #ccc;
+        }
+
+        input {
+            background: #fff;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        *:focus {
+            border: none;
+            outline: 0;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var input = document.getElementById("inputBox").focus();
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="inputBox" class="control-input" autofocus />
+</body>
+</html>
