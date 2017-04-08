@@ -639,19 +639,14 @@ function sendWebviewMessage(recipientId) {
             attachment: {
                 type: "template",
                 payload: {
-                    template_type: "generic",
-                    elements: [{
-                        title: "Use Webview input",
-                        subtitle: "Next-generation virtual reality",
-                        item_url: "https://www.oculus.com/en-us/rift/",
-                        image_url: SERVER_URL + "/assets/rift.png",
-                        buttons: [{
-                            type: "web_url",
-                            webview_height_ratio: "compact",
-                            webview_share_button: "hide",
-                            url: "https://first-fbmsg.herokuapp.com/webview.html",
-                            title: "Voer nummer in"
-                        }]
+                    template_type: "button",
+                    text: "Nummer invoeren please",
+                    buttons: [{
+                        type: "web_url",
+                        webview_height_ratio: "compact",
+                        webview_share_button: "hide",
+                        url: "https://first-fbmsg.herokuapp.com/webview.html",
+                        title: "Voer nummer in"
                     }]
                 }
             }
